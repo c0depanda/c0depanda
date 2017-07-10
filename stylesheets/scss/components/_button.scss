@@ -11,20 +11,23 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    border: 1px solid transparent;
-    border-radius: 3px;
-    padding: 11px 16px;
-    font-size: 16px;
+    border: 2px solid transparent;
+    border-radius: 0px;
+    padding: 12px 45px 15px;
+    font-size: 17px;
     text-decoration: none;
     transition: all 0.3s ease;
     font-family: inherit;
 }
 
-.btn--primary {
-    color: #fff;
-    background-color: $brand-color;
+.btn--default {
+    color: #030303;
+    background-color: #fff;
+    border-color: #030303;
+    font-family: 'Roboto Mono', monospace;
     &:hover {
-        background-color: $hover-color;
+        background-color: #030303;
+        color: #fff;
     }
 }
 
