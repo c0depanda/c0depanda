@@ -49,7 +49,7 @@
                         <span class="grey__text">c0depanda</span>. I'm a
                         <span class="grey__text">Front End Developer</span> currently building great apps at
                         <a href="https://www.flutterwave.com/" class="grey__text underlined">Flutterwave</a>. Feel free to check out recent projects on my
-                        <a href="work.html" class="grey__text underlined">work</a> page.</p>
+                        <router-link to="/projects" class="grey__text underlined">work</router-link> page.</p>
     
                     <!-- Section splitter -->
                     <div class="section__text__split"></div>
