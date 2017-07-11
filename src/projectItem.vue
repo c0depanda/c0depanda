@@ -8,7 +8,7 @@
         <!-- Project Page  -->
         <div class="project">
             <!-- Project Page -->
-            <div class="project-section project-section--1">
+            <div class="project-section project-section--1" v-if="forloop">
                 <div class="container">
                     <!-- Browser View -->
                     <div class="browser">
@@ -35,7 +35,7 @@
                 </div>
             </div>
             <!-- Project Page -->
-            <div class="project-section project-section--2">
+            <div class="project-section project-section--2" v-else-if="haute">
                 <div class="container">
                     <!-- Browser View -->
                     <div class="browser">
@@ -62,7 +62,7 @@
                 </div>
             </div>
             <!-- Project Page -->
-            <div class="project-section project-section--3">
+            <div class="project-section project-section--3" v-else-if="buffrspace">
                 <div class="container">
                     <!-- Browser View -->
                     <div class="browser">
@@ -89,7 +89,7 @@
                 </div>
             </div>
             <!-- Project Page -->
-            <div class="project-section project-section--4">
+            <div class="project-section project-section--4" v-else-if="hngtech">
                 <div class="container">
                     <!-- Browser View -->
                     <div class="browser">
@@ -116,7 +116,7 @@
                 </div>
             </div>
             <!-- Project Page -->
-            <div class="project-section project-section--5">
+            <div class="project-section project-section--5" v-else-if="recode">
                 <div class="container">
                     <!-- Browser View -->
                     <div class="browser">
@@ -143,7 +143,7 @@
                 </div>
             </div>
             <!-- Project Page -->
-            <div class="project-section project-section--6">
+            <div class="project-section project-section--6" v-else-if="hotelsng">
                 <div class="container">
                     <!-- Browser View -->
                     <div class="browser">
@@ -170,7 +170,7 @@
                 </div>
             </div>
             <!-- Project Page -->
-            <div class="project-section project-section--7">
+            <div class="project-section project-section--7" v-else-if="airtel">
                 <div class="container">
                     <!-- Browser View -->
                     <div class="browser">
@@ -211,5 +211,84 @@ export default {
 
         }
     },
+
+    computed: {
+        // Haute Project
+        haute() {
+            // check if route is pointing to project
+            if (this.$route.params.name == 'haute') {
+                return true;
+            }
+            else {
+                return false;
+            }
+        },
+
+        // forloop Project
+        forloop() {
+            // check if route is pointing to project
+            if (this.$route.params.name == 'forloop') {
+                return true;
+            }
+            else {
+                return false;
+            }
+        },
+
+        // Haute Project
+        buffrspace() {
+            // check if route is pointing to project
+            if (this.$route.params.name == 'buffrspace') {
+                return true;
+            }
+            else {
+                return false;
+            }
+        },
+
+        // Hngtech Project
+        hngtech() {
+            // check if route is pointing to project
+            if (this.$route.params.name == 'hngtech') {
+                return true;
+            }
+            else {
+                return false;
+            }
+        },
+
+        // Recode Project
+        recode() {
+            // check if route is pointing to project
+            if (this.$route.params.name == 'recode') {
+                return true;
+            }
+            else {
+                return false;
+            }
+        },
+
+        // Hotelsng Project
+        hotelsng() {
+            // check if route is pointing to project
+            if (this.$route.params.name == 'hotelsng') {
+                return true;
+            }
+            else {
+                return false;
+            }
+        },
+
+        // airtel Project
+        airtel() {
+            // check if route is pointing to project
+            if (this.$route.params.name == 'airtel') {
+                return true;
+            }
+            else {
+                return false;
+            }
+        },
+    }
 }
 </script>
