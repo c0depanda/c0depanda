@@ -19,7 +19,7 @@
             <!-- Containter -->
             <div class="container">
                 <!-- Section Logo -->
-                <div class="section__logo">
+                <router-link to="/" tag="div" class="section__logo">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="156" height="156" viewBox="0 0 156 156">
                         <defs>
                             <path id="a" d="M2.004 93.77A1.999 1.999 0 0 1 0 91.78V6.354C0 2.85 2.87 0 6.398 0h142.35c3.528 0 6.4 2.85 6.4 6.354V91.78c0 1.1-.892 1.99-2.005 1.99H2.004z" />
@@ -41,7 +41,7 @@
                         </g>
                     </svg>
     
-                </div>
+                </router-link>
                 <!-- Section Text -->
                 <div class="section__text">
                     <!-- Section Introduction -->
