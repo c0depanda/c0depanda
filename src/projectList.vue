@@ -47,13 +47,12 @@
                     <!-- Section Introduction -->
                     <p class="section__text__item">Here is a selection of some of my projects;
                         <br>
-                        <a href="https://www.flutterwave.com/" class="grey__text underlined">HAUTE</a>,
-                        <a href="https://www.flutterwave.com/" class="grey__text underlined">forLOOP</a>,
-                        <a href="https://www.flutterwave.com/" class="grey__text underlined">BUFFRSPACE</a>,
-                        <a href="https://www.flutterwave.com/" class="grey__text underlined">HNG.TECH</a>,
-                        <a href="https://www.flutterwave.com/" class="grey__text underlined">AIRTEL A-CLUB</a>,
-                        <a href="https://www.flutterwave.com/" class="grey__text underlined">RECODE HACKATHON</a>,
-                        <a href="https://www.flutterwave.com/" class="grey__text underlined">ngFEEDS</a>.
+                        <router-link to="/projects/haute" class="grey__text underlined">HAUTE</router-link>,
+                        <router-link to="/projects/forloop" class="grey__text underlined">forLOOP</router-link>,
+                        <router-link to="/projects/buffrspace" class="grey__text underlined">BUFFRSPACE</router-link>,
+                        <router-link to="/projects/hngtech" class="grey__text underlined">HNG.TECH</router-link>,
+                        <router-link to="/projects/airtel" class="grey__text underlined">AIRTEL A-CLUB</router-link>,
+                        <router-link to="/projects/recode" class="grey__text underlined">RECODE HACKATHON</router-link>
                         <br> All built with a combination of HTML5, CSS3 & JAVASCRIPT</p>
     
                     <!-- Section splitter -->

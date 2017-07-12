@@ -22,7 +22,7 @@
                         <!-- Browser content -->
                         <div class="browser__content">
                             <!-- Work Image -->
-                            <img src="img/forloop-Landing-Page.jpg" alt="" class="project__image">
+                            <img src="assets/img/forloop-Landing-Page.jpg" alt="" class="project__image">
                         </div>
                     </div>
                     <!-- Project title -->
@@ -31,7 +31,7 @@
                     <div class="project__action">
                         <a href="" class="btn btn--default">visit website</a>
                     </div>
-                    <a href="work.html" class="back">back to my work</a>
+                    <router-link to="/projects" class="back">back to my work</router-link>
                 </div>
             </div>
             <!-- Project Page -->
@@ -49,7 +49,7 @@
                         <!-- Browser content -->
                         <div class="browser__content">
                             <!-- Work Image -->
-                            <img src="img/haute.png" alt="" class="project__image">
+                            <img src="assets/img/haute.png" alt="" class="project__image">
                         </div>
                     </div>
                     <!-- Project title -->
@@ -58,7 +58,7 @@
                     <div class="project__action">
                         <a href="" class="btn btn--default">visit website</a>
                     </div>
-                    <a href="work.html" class="back">back to my work</a>
+                    <router-link to="/projects" class="back">back to my work</router-link>
                 </div>
             </div>
             <!-- Project Page -->
@@ -76,7 +76,7 @@
                         <!-- Browser content -->
                         <div class="browser__content">
                             <!-- Work Image -->
-                            <img src="img/buffrspace.png" alt="" class="project__image">
+                            <img src="assets/img/buffrspace.png" alt="" class="project__image">
                         </div>
                     </div>
                     <!-- Project title -->
@@ -85,7 +85,7 @@
                     <div class="project__action">
                         <a href="" class="btn btn--default">visit website</a>
                     </div>
-                    <a href="work.html" class="back">back to my work</a>
+                    <router-link to="/projects" class="back">back to my work</router-link>
                 </div>
             </div>
             <!-- Project Page -->
@@ -103,7 +103,7 @@
                         <!-- Browser content -->
                         <div class="browser__content">
                             <!-- Work Image -->
-                            <img src="img/HNGTECH.png" alt="" class="project__image">
+                            <img src="assets/img/HNGTECH.png" alt="" class="project__image">
                         </div>
                     </div>
                     <!-- Project title -->
@@ -112,7 +112,7 @@
                     <div class="project__action">
                         <a href="" class="btn btn--default">visit website</a>
                     </div>
-                    <a href="work.html" class="back">back to my work</a>
+                    <router-link to="/projects" class="back">back to my work</router-link>
                 </div>
             </div>
             <!-- Project Page -->
@@ -130,7 +130,7 @@
                         <!-- Browser content -->
                         <div class="browser__content">
                             <!-- Work Image -->
-                            <img src="img/reCode%20Landing.png" alt="" class="project__image">
+                            <img src="assets/img/reCode%20Landing.png" alt="" class="project__image">
                         </div>
                     </div>
                     <!-- Project title -->
@@ -139,7 +139,7 @@
                     <div class="project__action">
                         <a href="" class="btn btn--default">visit website</a>
                     </div>
-                    <a href="work.html" class="back">back to my work</a>
+                    <router-link to="/projects" class="back">back to my work</router-link>
                 </div>
             </div>
             <!-- Project Page -->
@@ -157,7 +157,7 @@
                         <!-- Browser content -->
                         <div class="browser__content">
                             <!-- Work Image -->
-                            <img src="img/hng.png" alt="" class="project__image">
+                            <img src="assets/img/hng.png" alt="" class="project__image">
                         </div>
                     </div>
                     <!-- Project title -->
@@ -166,7 +166,7 @@
                     <div class="project__action">
                         <a href="" class="btn btn--default">visit website</a>
                     </div>
-                    <a href="work.html" class="back">back to my work</a>
+                    <router-link to="/projects" class="back">back to my work</router-link>
                 </div>
             </div>
             <!-- Project Page -->
@@ -184,7 +184,7 @@
                         <!-- Browser content -->
                         <div class="browser__content">
                             <!-- Work Image -->
-                            <img src="img/Airtel.png" alt="" class="project__image">
+                            <img src="assets/img/Airtel.png" alt="" class="project__image">
                         </div>
                     </div>
                     <!-- Project title -->
@@ -193,7 +193,7 @@
                     <div class="project__action">
                         <a href="" class="btn btn--default">visit website</a>
                     </div>
-                    <a href="work.html" class="back">back to my work</a>
+                    <router-link to="/projects" class="back">back to my work</router-link>
                 </div>
             </div>
         </div>
