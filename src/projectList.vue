@@ -7,12 +7,12 @@
                 <!-- pre caption item -->
                 <div class="pre-caption__item">
                     <!-- pre caption item link -->
-                    <a href="" class="pre-caption__link">SHARE ON FACEBOOK</a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//nosaobaseki.com/" target="_blank" class="pre-caption__link">SHARE ON FACEBOOK</a>
                 </div>
                 <!-- pre caption item -->
                 <div class="pre-caption__item">
                     <!-- pre caption item link -->
-                    <a href="" class="pre-caption__link">TWEET IT</a>
+                    <a href="https://twitter.com/home?status=Checkout%20%40c0depanda%20Portfolio%20site%20http%3A//nosaobaseki.com/" target="_blank"  class="pre-caption__link">TWEET IT</a>
                 </div>
             </div>
             <!-- Section -->
