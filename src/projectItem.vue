@@ -143,7 +143,7 @@
                                 <h1 class="project__title">forLOOP</h1>
                                 <p class="project__description">A community of passionate software developers and enthusiasts across Africa.</p>
                                 <div class="project__action">
-                                    <a href="" class="btn btn--default">visit website</a>
+                                    <a href="https://c0depanda.bitbucket.io/forLoop/" target="_blank" class="btn btn--default">visit website</a>
                                 </div>
                                 <router-link to="/projects" class="back">back to my work</router-link>
                             </div>
