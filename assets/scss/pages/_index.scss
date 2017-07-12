@@ -223,3 +223,69 @@
         }
     }
 }
+
+.panda-enter-active {
+  animation: bounce-in 1s;
+  //position: absolute;
+}
+
+.panda-leave-active {
+  animation: slide-left .5s;
+  position: absolute;
+  z-index: 3;
+}
+
+.panda2-enter-active {
+  animation: bounce-in .5s;
+  //position: absolute;
+}
+
+.panda2-leave-active {
+  animation: slide-right .5s;
+  position: absolute;
+  z-index: 3;
+}
+
+.rad-enter-active {
+    animation: bounce-in .3s;
+}
+
+.fader {
+    animation: fadeIn .1s;
+}
+
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-1200px);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(1200px);
+  }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}

@@ -10,8 +10,8 @@ const ProjectItem = () => import('./projectItem.vue')
 
 const routes = [
     { path: '/', component: Main },
-    { path: '/projects', component: ProjectList},
-    { path: '/projects/:name', component: ProjectItem },
+    { path: '/projects', component: ProjectList, name: 'project'},
+    { path: '/projects/:name', component: ProjectItem, name: 'projectlist' },
 ]
 
 const router = new VueRouter({
