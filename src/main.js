@@ -12,6 +12,7 @@ const routes = [
     { path: '/', component: Main },
     { path: '/projects', component: ProjectList, name: 'project'},
     { path: '/projects/:name', component: ProjectItem, name: 'projectlist' },
+    { path: '*', redirect: '/' }
 ]
 
 const router = new VueRouter({
