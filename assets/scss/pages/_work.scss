@@ -20,20 +20,27 @@
         }
     }
     &__content {
-        height: 450px;
+        height: 200px;
         overflow: hidden;
         padding: 10px 10px 0;
+        @include media(768px) {
+            height: 450px;
+        }
     }
 }
 
 .project-section {
-    height: 100vh;
+    min-height: 100vh;
     max-width: 650px;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    align-items: center;
     text-align: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    @include media(768px) {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .project__title {
@@ -53,12 +60,15 @@
     max-width: 520px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 17px;
+    font-size: 14px;
     line-height: 1.76;
     text-align: center;
     color: #030303;
     font-family: 'Roboto Mono', monospace;
     margin-bottom: 24px;
+    @include media(768px) {
+        font-size: 17px;
+    }
 }
 
 .project__action {
