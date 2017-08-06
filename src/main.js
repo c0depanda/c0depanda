@@ -1,6 +1,7 @@
 
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+window.Hammer = require('hammerjs')
 
 Vue.use(VueRouter)
 

@@ -7,7 +7,7 @@
                 <div class="slider__text">{{prevProject}}</div>
             </router-link>
             <!-- Project Page  -->
-            <div class="project">
+            <div id="projects" class="project">
                 <!-- Project Page -->
                 <div class="project-section">
                     <div class="container">
@@ -240,6 +240,10 @@ export default {
         }
     },
 
+    mounted() {
+        this.mobileSwipe();
+    },
+
     computed: {
         // Haute Project
         haute() {
@@ -341,6 +345,27 @@ export default {
             else {
                 return this.projects[this.projectPosition + 1];
             }
+        }
+    },
+
+    methods: {
+        // Navigate to next or previous project when a user swipes left or right on a mobile device
+        mobileSwipe() {
+            let stage = document.getElementById('projects');
+            // create a manager for that element 
+            let mc = new Hammer.Manager(stage);
+            // create a recognizer 
+            let Swipe = new Hammer.Swipe();
+            // add the recognizer 
+            mc.add(Swipe);
+            // subscribe to events 
+            mc.on('swiperight', (e) => {
+                this.$router.push({ name: 'projectlist', params: { name: this.nextProject.toLowerCase() } })
+            });
+
+            mc.on('swipeleft', (e) => {
+                this.$router.push({ name: 'projectlist', params: { name: this.prevProject.toLowerCase() } })
+            });
         }
     }
 }

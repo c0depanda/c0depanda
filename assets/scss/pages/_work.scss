@@ -4,6 +4,7 @@
     border: 1px solid #9a9a9a;
     margin-bottom: 36px;
     max-width: 650px;
+    position: relative;
     &__header {
         height: 28px;
         border-bottom: 1px solid #9a9a9a;
@@ -25,6 +26,18 @@
         padding: 10px 10px 0;
         @include media(768px) {
             height: 450px;
+        }
+    }
+
+    &:before {
+        @include media(max-width 767px) {
+            position: absolute;
+            content: 'Swipe right for more projects >>';
+            top: -30px;
+            right: 0;
+            font-size: 8px;
+            padding-bottom: 5px;
+            font-family: 'Roboto Mono', monospace;
         }
     }
 }
