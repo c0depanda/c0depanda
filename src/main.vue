@@ -64,7 +64,7 @@
                     <!-- Social Media Item -->
                     <div class="social__media__item">
                         <!-- GITHUB LINK -->
-                        <a href="https://github.com/c0depanda" class="social__media__item__link">
+                        <a href="https://github.com/c0depanda" target="_blank" class="social__media__item__link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
                                 <g fill="none" fill-rule="evenodd" transform="translate(2 2)">
                                     <circle cx="28" cy="28" r="28" stroke="#030303" stroke-width="3" />
@@ -77,7 +77,7 @@
                     <!-- Social Media Item -->
                     <div class="social__media__item">
                         <!-- Twitter LINK -->
-                        <a href="https://twitter.com/c0depanda" class="social__media__item__link">
+                        <a href="https://twitter.com/c0depanda" target="_blank" class="social__media__item__link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
                                 <g fill="none" fill-rule="evenodd" transform="translate(2 2)">
                                     <circle cx="28" cy="28" r="28" stroke="#030303" stroke-width="3" />
@@ -89,7 +89,7 @@
                     <!-- Social Media Item -->
                     <div class="social__media__item">
                         <!-- Instagram LINK -->
-                        <a href="https://www.instagram.com/c0depanda/" class="social__media__item__link">
+                        <a href="https://www.instagram.com/c0depanda/" target="_blank" class="social__media__item__link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
                                 <g fill="none" fill-rule="evenodd" transform="translate(2 2)">
                                     <circle cx="28" cy="28" r="28" stroke="#030303" stroke-width="3" />
