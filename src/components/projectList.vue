@@ -12,7 +12,7 @@
                 <!-- pre caption item -->
                 <div class="pre-caption__item">
                     <!-- pre caption item link -->
-                    <a href="https://twitter.com/home?status=Checkout%20%40c0depanda%20Portfolio%20site%20http%3A//nosaobaseki.com/" target="_blank"  class="pre-caption__link">TWEET IT</a>
+                    <a href="https://twitter.com/home?status=Checkout%20%40c0depanda%20Portfolio%20site%20http%3A//nosaobaseki.com/" target="_blank" class="pre-caption__link">TWEET IT</a>
                 </div>
             </div>
             <!-- Section -->
@@ -41,7 +41,7 @@
                                 <path id="eyes" fill="#050505" d="M90.36 49.443c-1.645-.475-2.853-2.488-2.557-4.795.423-1.852 2.212-3.21 4.263-2.878 1.645.476 2.853 2.489 2.557 4.796-.422 1.851-2.211 3.21-4.262 2.877zM55.301 45.054c-1.865.28-3.678-1.181-4.049-3.264-.37-2.083.842-3.998 2.707-4.278 1.866-.28 3.678 1.181 4.049 3.264.37 2.083-.841 3.998-2.707 4.278z" />
                             </g>
                         </svg>
-    
+
                     </router-link>
                     <!-- Section Text -->
                     <div class="section__text">
@@ -55,10 +55,10 @@
                             <router-link to="/projects/airtel" class="grey__text underlined">AIRTEL A-CLUB</router-link>,
                             <router-link to="/projects/recode" class="grey__text underlined">RECODE HACKATHON</router-link>
                             <br> All built with a combination of HTML5, CSS3 & JAVASCRIPT</p>
-    
+
                         <!-- Section splitter -->
                         <div class="section__text__split"></div>
-    
+
                         <!-- Section Outline -->
                         <p class="section__text__outline">If you'd like to collaborate on a project or just say hello:
                             <a href="mailto:hello@nosaobaseki.com" class="grey__text">hello@nosaobaseki.com</a>
@@ -76,7 +76,7 @@
                                         <path fill="#030303" d="M36.916 15c.445 1.001.733 2.664.303 3.882 2.153 1.406 2.12 5.107 1.131 7.836-1.12 3.094-4.693 4.507-6.351 4.628.335.724.978 1 1.135 2.164.234 1.74-.367 4.289.226 5.449.284.555.747.57 1.06 1.045-.765.898-2.66-.1-2.876-1.045-.37-1.619.563-4.128-.454-5.225.072 1.765-.42 4.245.076 5.822.196.62.76.86.605 1.418-3.553.358-2.068-4.56-2.649-7.464-.536.038-.3.796-.303 1.12-.015 2.835.586 6.724-2.496 6.344-.09-.596.413-.798.605-1.342.562-1.596-.105-3.973.153-5.898-1.176.88.123 3.95-.606 5.523-.42.906-1.773 1.3-2.8.896.135-.675.837-.566 1.135-1.194.416-.876.003-2.138.151-3.434-2.177.431-3.865-.062-4.692-1.418-.37-.608-.461-1.326-.908-1.865-.444-.54-1.155-.613-1.361-1.343 2.696-.644 2.8 2.751 5.22 2.835.743.027 1.13-.212 1.816-.373.193-.856.604-1.494 1.21-1.941-3.012-.41-6.468-2.046-7.349-4.702-.312-.942-.28-6.08 1.45-7.538-.49-1.224-.338-3.227.302-4.18 1.93.086 3.1.92 4.313 1.717 1.503-.424 3.085-.635 5.145-.522.866.047 1.768.433 2.42.372.64-.06 1.346-.772 1.968-1.044.81-.355 1.495-.49 2.421-.523z" />
                                     </g>
                                 </svg>
-    
+
                             </a>
                         </div>
                         <!-- Social Media Item -->

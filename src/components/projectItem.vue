@@ -28,7 +28,7 @@
                                 </div>
                             </div>
                         </transition>
-    
+
                         <transition name="panda">
                             <!-- Browser View -->
                             <div class="browser" v-if="haute">
@@ -46,7 +46,7 @@
                                 </div>
                             </div>
                         </transition>
-    
+
                         <transition name="panda">
                             <!-- Browser View -->
                             <div class="browser" v-if="buffrspace">
@@ -64,7 +64,7 @@
                                 </div>
                             </div>
                         </transition>
-    
+
                         <transition name="panda">
                             <!-- Browser View -->
                             <div class="browser" v-if="hngtech">
@@ -82,7 +82,7 @@
                                 </div>
                             </div>
                         </transition>
-    
+
                         <transition name="panda">
                             <!-- Browser View -->
                             <div class="browser" v-if="recode">
@@ -100,7 +100,7 @@
                                 </div>
                             </div>
                         </transition>
-    
+
                         <transition name="panda">
                             <!-- Browser View -->
                             <div class="browser" v-if="hotelsng">
@@ -118,7 +118,7 @@
                                 </div>
                             </div>
                         </transition>
-    
+
                         <transition name="panda">
                             <!-- Browser View -->
                             <div class="browser" v-if="airtel">
@@ -136,7 +136,7 @@
                                 </div>
                             </div>
                         </transition>
-    
+
                         <transition name="panda2">
                             <div v-if="forloop">
                                 <!-- Project title -->
@@ -148,7 +148,7 @@
                                 <router-link to="/projects" class="back">back to my work</router-link>
                             </div>
                         </transition>
-    
+
                         <transition name="panda2">
                             <div v-if="haute">
                                 <!-- Project title -->
@@ -160,7 +160,7 @@
                                 <router-link to="/projects" class="back">back to my work</router-link>
                             </div>
                         </transition>
-    
+
                         <transition name="panda2">
                             <div v-if="buffrspace">
                                 <!-- Project title -->
@@ -172,7 +172,7 @@
                                 <router-link to="/projects" class="back">back to my work</router-link>
                             </div>
                         </transition>
-    
+
                         <transition name="panda2">
                             <div v-if="hngtech">
                                 <!-- Project title -->
@@ -184,7 +184,7 @@
                                 <router-link to="/projects" class="back">back to my work</router-link>
                             </div>
                         </transition>
-    
+
                         <transition name="panda2">
                             <div v-if="recode">
                                 <!-- Project title -->
@@ -196,7 +196,7 @@
                                 <router-link to="/projects" class="back">back to my work</router-link>
                             </div>
                         </transition>
-    
+
                         <transition name="panda2">
                             <div v-if="hotelsng">
                                 <!-- Project title -->
@@ -208,7 +208,7 @@
                                 <router-link to="/projects" class="back">back to my work</router-link>
                             </div>
                         </transition>
-    
+
                         <transition name="panda2">
                             <div v-if="airtel">
                                 <!-- Project title -->
@@ -220,7 +220,7 @@
                                 <router-link to="/projects" class="back">back to my work</router-link>
                             </div>
                         </transition>
-    
+
                     </div>
                 </div>
             </div>

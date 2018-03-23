@@ -1,27 +1,14 @@
-
+// The Vue build version to load with the `import` command
+// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
-import VueRouter from 'vue-router'
+import App from './App'
+import router from './router'
 window.Hammer = require('hammerjs')
 
-Vue.use(VueRouter)
-
-import Main from './main.vue'
-const ProjectList = () => import('./projectList.vue')
-const ProjectItem = () => import('./projectItem.vue')
-
-const routes = [
-    { path: '/', component: Main },
-    { path: '/projects', component: ProjectList, name: 'project'},
-    { path: '/projects/:name', component: ProjectItem, name: 'projectlist' },
-    { path: '*', redirect: '/' }
-]
-
-const router = new VueRouter({
-    routes
-})
-
-const app = new Vue({
-    el: '#app',
-    router,
-    template: '<router-view></router-view>'
+/* eslint-disable no-new */
+new Vue({
+	el: '#app',
+	router,
+	template: '<App/>',
+	components: { App }
 })
