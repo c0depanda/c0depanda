@@ -10,7 +10,7 @@ app.use(helmet.frameguard({ action: 'sameorigin' }))
 app.use(
     helmet.contentSecurityPolicy({
         directives: {
-            "script-src": ["'self'", "nosaobaseki.com", "c0depanda.com"],
+            "script-src": ["'self'", "'unsafe-eval'", "nosaobaseki.com", "c0depanda.com"],
             "frame-ancestors": ["'self'", "nosaobaseki.com", "c0depanda.com"],
             "img-src": ["'self'", "nosaobaseki.com", "c0depanda.com"],
             "style-src": ["'self'", "nosaobaseki.com", "c0depanda.com", "fonts.googleapis.com"],
