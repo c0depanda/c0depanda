@@ -29,7 +29,6 @@
     &__content {
         height: 200px;
         overflow: hidden;
-        padding: 10px 10px 0;
         @include media(768px) {
             height: 450px;
         }

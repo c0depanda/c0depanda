@@ -55,7 +55,7 @@ export default {
                     title: "Haute",
                     description: "Landing Page for a fashion designer’s personal productivity tool aimed at handling tasks and managing their customer base.",
                     link: "https://c0depanda.bitbucket.io/Haute2/",
-                    image: "/assets/img/haute.jpg",
+                    image: "/static/img/haute.jpg",
                 },
                 {
                     id: 1,
@@ -63,7 +63,7 @@ export default {
                     title: "forLoop",
                     description: "A community of passionate software developers and enthusiasts across Africa.",
                     link: "https://c0depanda.bitbucket.io/forLoop/",
-                    image: "/assets/img/forloop-Landing-Page.jpg",
+                    image: "/static/img/forloop-Landing-Page.jpg",
                 },
                 {
                     id: 2,
@@ -71,7 +71,7 @@ export default {
                     title: "Bufferspace",
                     description: "Find a great space to work Book from a diverse range of work and meeting spaces, just when you need them - Anywhere, Everywhere.",
                     link: "http://buffrspace.com/",
-                    image: "/assets/img/buffrspace.jpg",
+                    image: "/static/img/buffrspace.jpg",
                 },
                 {
                     id: 3,
@@ -79,7 +79,7 @@ export default {
                     title: "HNGTECH",
                     description: "A Landing Page for an organisation that builds technologies for hospitality.",
                     link: "http://hng.tech/",
-                    image: '/assets/img/HNGTECH.jpg"',
+                    image: "/static/img/hngtech.jpg",
                 },
                 {
                     id: 4,
@@ -87,7 +87,7 @@ export default {
                     title: "Recode",
                     description: "ReCode Nigeria Hackathon website.",
                     link: "https://c0depanda.bitbucket.io/recode/",
-                    image: "/assets/img/reCode-Landing.jpg",
+                    image: "/static/img/reCode-Landing.jpg",
                 },
                 {
                     id: 5,
@@ -95,7 +95,7 @@ export default {
                     title: "HotelsNG",
                     description: "Hotels.ng is a Nigerian online hotels booking agency which list over 7,000 hotels from 21 regions in Nigeria.",
                     link: "https://hotels.ng/",
-                    image: "/assets/img/hng.jpg",
+                    image: "/static/img/hng.jpg",
                 },
                 {
                     id: 6,
@@ -103,7 +103,7 @@ export default {
                     title: "Airtel A Club",
                     description: "A Website that allows you to earn voucher points every time you do a airtime topup.",
                     link: "https://c0depanda.bitbucket.io/Airtel/",
-                    image: "/assets/img/Airtel.jpg",
+                    image: "/static/img/Airtel.jpg",
                 },
             ],
         };
@@ -116,7 +116,7 @@ export default {
     computed: {
         // project position
         projectPosition() {
-            return this.projectList.findIndex( item => this.$route.params.name == item.name.toLowerCase())
+            return this.projectList.findIndex((item) => this.$route.params.name == item.name.toLowerCase());
         },
 
         // previous Project

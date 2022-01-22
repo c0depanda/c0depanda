@@ -1028,7 +1028,6 @@ html, html a {
 .browser__content {
   height: 200px;
   overflow: hidden;
-  padding: 10px 10px 0;
 }
 @media screen and (min-width: 768px) {
   .browser__content {
