@@ -13,7 +13,7 @@ app.use(
             "script-src": ["'self'", "nosaobaseki.com", "c0depanda.com"],
             "img-src": ["'self'", "nosaobaseki.com", "c0depanda.com"],
             "style-src": ["'self'", "nosaobaseki.com", "c0depanda.com", "fonts.googleapis.com"],
-            "font-src": ["'self'", "nosaobaseki.com", "c0depanda.com", "fonts.googleapis.com"],
+            "font-src": ["'self'", "nosaobaseki.com", "c0depanda.com", "fonts.googleapis.com", "fonts.gstatic.com", 'data:' ],
         },
     })
 );
