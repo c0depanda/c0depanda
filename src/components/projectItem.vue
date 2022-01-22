@@ -3,230 +3,42 @@
         <!-- Main Page -->
         <main class="main">
             <!-- Left Slider -->
-            <router-link tag="div" :to="{ name: 'projectlist', params: { name: prevProject.toLowerCase()}}" class="slider__left slido">
-                <div class="slider__text">{{prevProject}}</div>
+            <router-link tag="div" :to="{ name: 'projectlist', params: { name: prevProject.toLowerCase() } }" class="slider__left slido">
+                <div class="slider__text">{{ prevProject }}</div>
             </router-link>
             <!-- Project Page  -->
             <div id="projects" class="project">
                 <!-- Project Page -->
                 <div class="project-section">
-                    <div class="container">
-                        <transition name="panda">
-                            <!-- Browser View -->
-                            <div class="browser" v-if="forloop">
-                                <!-- browser header -->
-                                <div class="browser__header">
-                                    <!-- Three Dots -->
-                                    <div class="browser__header__dots"></div>
-                                    <div class="browser__header__dots"></div>
-                                    <div class="browser__header__dots"></div>
-                                </div>
-                                <!-- Browser content -->
-                                <div class="browser__content">
-                                    <!-- Work Image -->
-                                    <img src="/assets/img/forloop-Landing-Page.jpg" alt="" class="project__image">
-                                </div>
+                    <div class="container" v-if="item.id == projectPosition" v-for="item in projectList" :key="item.name">
+                        <!-- Browser View -->
+                        <div class="browser">
+                            <!-- browser header -->
+                            <div class="browser__header">
+                                <!-- Three Dots -->
+                                <div class="browser__header__dots"></div>
+                                <div class="browser__header__dots"></div>
+                                <div class="browser__header__dots"></div>
                             </div>
-                        </transition>
-
-                        <transition name="panda">
-                            <!-- Browser View -->
-                            <div class="browser" v-if="haute">
-                                <!-- browser header -->
-                                <div class="browser__header">
-                                    <!-- Three Dots -->
-                                    <div class="browser__header__dots"></div>
-                                    <div class="browser__header__dots"></div>
-                                    <div class="browser__header__dots"></div>
-                                </div>
-                                <!-- Browser content -->
-                                <div class="browser__content">
-                                    <!-- Work Image -->
-                                    <img src="/assets/img/haute.jpg" alt="" class="project__image">
-                                </div>
+                            <!-- Browser content -->
+                            <div class="browser__content">
+                                <!-- Work Image -->
+                                <img :src="item.image" alt="" class="project__image" />
                             </div>
-                        </transition>
-
-                        <transition name="panda">
-                            <!-- Browser View -->
-                            <div class="browser" v-if="buffrspace">
-                                <!-- browser header -->
-                                <div class="browser__header">
-                                    <!-- Three Dots -->
-                                    <div class="browser__header__dots"></div>
-                                    <div class="browser__header__dots"></div>
-                                    <div class="browser__header__dots"></div>
-                                </div>
-                                <!-- Browser content -->
-                                <div class="browser__content">
-                                    <!-- Work Image -->
-                                    <img src="/assets/img/buffrspace.jpg" alt="" class="project__image">
-                                </div>
-                            </div>
-                        </transition>
-
-                        <transition name="panda">
-                            <!-- Browser View -->
-                            <div class="browser" v-if="hngtech">
-                                <!-- browser header -->
-                                <div class="browser__header">
-                                    <!-- Three Dots -->
-                                    <div class="browser__header__dots"></div>
-                                    <div class="browser__header__dots"></div>
-                                    <div class="browser__header__dots"></div>
-                                </div>
-                                <!-- Browser content -->
-                                <div class="browser__content">
-                                    <!-- Work Image -->
-                                    <img src="/assets/img/HNGTECH.jpg" alt="" class="project__image">
-                                </div>
-                            </div>
-                        </transition>
-
-                        <transition name="panda">
-                            <!-- Browser View -->
-                            <div class="browser" v-if="recode">
-                                <!-- browser header -->
-                                <div class="browser__header">
-                                    <!-- Three Dots -->
-                                    <div class="browser__header__dots"></div>
-                                    <div class="browser__header__dots"></div>
-                                    <div class="browser__header__dots"></div>
-                                </div>
-                                <!-- Browser content -->
-                                <div class="browser__content">
-                                    <!-- Work Image -->
-                                    <img src="/assets/img/reCode-Landing.jpg" alt="" class="project__image">
-                                </div>
-                            </div>
-                        </transition>
-
-                        <transition name="panda">
-                            <!-- Browser View -->
-                            <div class="browser" v-if="hotelsng">
-                                <!-- browser header -->
-                                <div class="browser__header">
-                                    <!-- Three Dots -->
-                                    <div class="browser__header__dots"></div>
-                                    <div class="browser__header__dots"></div>
-                                    <div class="browser__header__dots"></div>
-                                </div>
-                                <!-- Browser content -->
-                                <div class="browser__content">
-                                    <!-- Work Image -->
-                                    <img src="/assets/img/hng.jpg" alt="" class="project__image">
-                                </div>
-                            </div>
-                        </transition>
-
-                        <transition name="panda">
-                            <!-- Browser View -->
-                            <div class="browser" v-if="airtel">
-                                <!-- browser header -->
-                                <div class="browser__header">
-                                    <!-- Three Dots -->
-                                    <div class="browser__header__dots"></div>
-                                    <div class="browser__header__dots"></div>
-                                    <div class="browser__header__dots"></div>
-                                </div>
-                                <!-- Browser content -->
-                                <div class="browser__content">
-                                    <!-- Work Image -->
-                                    <img src="/assets/img/Airtel.jpg" alt="" class="project__image">
-                                </div>
-                            </div>
-                        </transition>
-
-                        <transition name="panda2">
-                            <div v-if="forloop">
-                                <!-- Project title -->
-                                <h1 class="project__title">forLOOP</h1>
-                                <p class="project__description">A community of passionate software developers and enthusiasts across Africa.</p>
-                                <div class="project__action">
-                                    <a href="https://c0depanda.bitbucket.io/forLoop/" target="_blank" class="btn btn--default">visit website</a>
-                                </div>
-                                <router-link to="/projects" class="back">back to my work</router-link>
-                            </div>
-                        </transition>
-
-                        <transition name="panda2">
-                            <div v-if="haute">
-                                <!-- Project title -->
-                                <h1 class="project__title">Haute</h1>
-                                <p class="project__description">Landing Page for a fashion designer’s personal productivity tool aimed at handling tasks and managing their customer base.</p>
-                                <div class="project__action">
-                                    <a href="https://c0depanda.bitbucket.io/Haute2/" target="_blank" class="btn btn--default">visit website</a>
-                                </div>
-                                <router-link to="/projects" class="back">back to my work</router-link>
-                            </div>
-                        </transition>
-
-                        <transition name="panda2">
-                            <div v-if="buffrspace">
-                                <!-- Project title -->
-                                <h1 class="project__title">Buffrspace</h1>
-                                <p class="project__description">Find a great space to work Book from a diverse range of work and meeting spaces, just when you need them - Anywhere, Everywhere.</p>
-                                <div class="project__action">
-                                    <a href="http://buffrspace.com/" target="_blank" class="btn btn--default">visit website</a>
-                                </div>
-                                <router-link to="/projects" class="back">back to my work</router-link>
-                            </div>
-                        </transition>
-
-                        <transition name="panda2">
-                            <div v-if="hngtech">
-                                <!-- Project title -->
-                                <h1 class="project__title">HNGTECH</h1>
-                                <p class="project__description">A Landing Page for an organisation that builds technologies for hospitality.</p>
-                                <div class="project__action">
-                                    <a href="http://hng.tech/" target="_blank" class="btn btn--default">visit website</a>
-                                </div>
-                                <router-link to="/projects" class="back">back to my work</router-link>
-                            </div>
-                        </transition>
-
-                        <transition name="panda2">
-                            <div v-if="recode">
-                                <!-- Project title -->
-                                <h1 class="project__title">Recode</h1>
-                                <p class="project__description">ReCode Nigeria Hackathon website.</p>
-                                <div class="project__action">
-                                    <a href="https://c0depanda.bitbucket.io/recode/" target="_blank" class="btn btn--default">visit website</a>
-                                </div>
-                                <router-link to="/projects" class="back">back to my work</router-link>
-                            </div>
-                        </transition>
-
-                        <transition name="panda2">
-                            <div v-if="hotelsng">
-                                <!-- Project title -->
-                                <h1 class="project__title">HotelsNG</h1>
-                                <p class="project__description">Hotels.ng is a Nigerian online hotels booking agency which list over 7,000 hotels from 21 regions in Nigeria.</p>
-                                <div class="project__action">
-                                    <a href="https://hotels.ng/" target="_blank" class="btn btn--default">visit website</a>
-                                </div>
-                                <router-link to="/projects" class="back">back to my work</router-link>
-                            </div>
-                        </transition>
-
-                        <transition name="panda2">
-                            <div v-if="airtel">
-                                <!-- Project title -->
-                                <h1 class="project__title">Airtel A Club</h1>
-                                <p class="project__description">A Website that allows you to earn voucher points every time you do a airtime topup.</p>
-                                <div class="project__action">
-                                    <a href="https://c0depanda.bitbucket.io/Airtel/" target="_blank" class="btn btn--default">visit website</a>
-                                </div>
-                                <router-link to="/projects" class="back">back to my work</router-link>
-                            </div>
-                        </transition>
-
+                        </div>
+                        <!-- Project title -->
+                        <h1 class="project__title">{{ item.title }}</h1>
+                        <p class="project__description">{{ item.description }}</p>
+                        <div class="project__action">
+                            <a :href="item.link" target="_blank" class="btn btn--default">visit website</a>
+                        </div>
+                        <router-link to="/projects" class="back">back to my work</router-link>
                     </div>
                 </div>
             </div>
             <!-- right Slider -->
-            <router-link tag="div" :to="{ name: 'projectlist', params: { name: nextProject.toLowerCase()}}" class="slider__right slido">
-                <div class="slider__text">{{nextProject}}</div>
+            <router-link tag="div" :to="{ name: 'projectlist', params: { name: nextProject.toLowerCase() } }" class="slider__right slido">
+                <div class="slider__text">{{ nextProject }}</div>
             </router-link>
         </main>
     </transition>
@@ -236,8 +48,65 @@
 export default {
     data() {
         return {
-            projects: ['HAUTE', 'FORLOOP', 'BUFFRSPACE', 'HNGTECH', 'RECODE', 'HOTELSNG', 'AIRTEL'],
-        }
+            projectList: [
+                {
+                    id: 0,
+                    name: "HAUTE",
+                    title: "Haute",
+                    description: "Landing Page for a fashion designer’s personal productivity tool aimed at handling tasks and managing their customer base.",
+                    link: "https://c0depanda.bitbucket.io/Haute2/",
+                    image: "/assets/img/haute.jpg",
+                },
+                {
+                    id: 1,
+                    name: "FORLOOP",
+                    title: "forLoop",
+                    description: "A community of passionate software developers and enthusiasts across Africa.",
+                    link: "https://c0depanda.bitbucket.io/forLoop/",
+                    image: "/assets/img/forloop-Landing-Page.jpg",
+                },
+                {
+                    id: 2,
+                    name: "BUFFRSPACE",
+                    title: "Bufferspace",
+                    description: "Find a great space to work Book from a diverse range of work and meeting spaces, just when you need them - Anywhere, Everywhere.",
+                    link: "http://buffrspace.com/",
+                    image: "/assets/img/buffrspace.jpg",
+                },
+                {
+                    id: 3,
+                    name: "HNGTECH",
+                    title: "HNGTECH",
+                    description: "A Landing Page for an organisation that builds technologies for hospitality.",
+                    link: "http://hng.tech/",
+                    image: '/assets/img/HNGTECH.jpg"',
+                },
+                {
+                    id: 4,
+                    name: "RECODE",
+                    title: "Recode",
+                    description: "ReCode Nigeria Hackathon website.",
+                    link: "https://c0depanda.bitbucket.io/recode/",
+                    image: "/assets/img/reCode-Landing.jpg",
+                },
+                {
+                    id: 5,
+                    name: "HOTELSNG",
+                    title: "HotelsNG",
+                    description: "Hotels.ng is a Nigerian online hotels booking agency which list over 7,000 hotels from 21 regions in Nigeria.",
+                    link: "https://hotels.ng/",
+                    image: "/assets/img/hng.jpg",
+                },
+                {
+                    id: 6,
+                    name: "AIRTEL",
+                    title: "Airtel A Club",
+                    description: "A Website that allows you to earn voucher points every time you do a airtime topup.",
+                    link: "https://c0depanda.bitbucket.io/Airtel/",
+                    image: "/assets/img/Airtel.jpg",
+                },
+            ],
+        };
     },
 
     mounted() {
@@ -245,128 +114,49 @@ export default {
     },
 
     computed: {
-        // Haute Project
-        haute() {
-            // check if route is pointing to project
-            if (this.$route.params.name == 'haute') {
-                return true;
-            }
-            else {
-                return false;
-            }
-        },
-
-        // forloop Project
-        forloop() {
-            // check if route is pointing to project
-            if (this.$route.params.name == 'forloop') {
-                return true;
-            }
-            else {
-                return false;
-            }
-        },
-
-        // Haute Project
-        buffrspace() {
-            // check if route is pointing to project
-            if (this.$route.params.name == 'buffrspace') {
-                return true;
-            }
-            else {
-                return false;
-            }
-        },
-
-        // Hngtech Project
-        hngtech() {
-            // check if route is pointing to project
-            if (this.$route.params.name == 'hngtech') {
-                return true;
-            }
-            else {
-                return false;
-            }
-        },
-
-        // Recode Project
-        recode() {
-            // check if route is pointing to project
-            if (this.$route.params.name == 'recode') {
-                return true;
-            }
-            else {
-                return false;
-            }
-        },
-
-        // Hotelsng Project
-        hotelsng() {
-            // check if route is pointing to project
-            if (this.$route.params.name == 'hotelsng') {
-                return true;
-            }
-            else {
-                return false;
-            }
-        },
-
-        // airtel Project
-        airtel() {
-            // check if route is pointing to project
-            if (this.$route.params.name == 'airtel') {
-                return true;
-            }
-            else {
-                return false;
-            }
-        },
-
         // project position
         projectPosition() {
-            return (this.projects.indexOf(this.$route.params.name.toUpperCase()));
+            return this.projectList.findIndex( item => this.$route.params.name == item.name.toLowerCase())
         },
 
         // previous Project
         prevProject() {
-            if ((this.projectPosition - 1) < 0) {
-                return this.projects[this.projects.length - 1];
-            }
-            else {
-                return this.projects[this.projectPosition - 1];
+            if (this.projectPosition - 1 < 0) {
+                return this.projectList[this.projectList.length - 1].name;
+            } else {
+                return this.projectList[this.projectPosition - 1].name;
             }
         },
 
         // next Project
         nextProject() {
-            if ((this.projectPosition + 1) > (this.projects.length - 1)) {
-                return this.projects[0];
+            if (this.projectPosition + 1 > this.projectList.length - 1) {
+                return this.projectList[0].name;
+            } else {
+                return this.projectList[this.projectPosition + 1].name;
             }
-            else {
-                return this.projects[this.projectPosition + 1];
-            }
-        }
+        },
     },
 
     methods: {
         // Navigate to next or previous project when a user swipes left or right on a mobile device
         mobileSwipe() {
-            let stage = document.getElementById('projects');
-            // create a manager for that element 
+            let stage = document.getElementById("projects");
+            // create a manager for that element
             let mc = new Hammer.Manager(stage);
-            // create a recognizer 
+            // create a recognizer
             let Swipe = new Hammer.Swipe();
-            // add the recognizer 
+            // add the recognizer
             mc.add(Swipe);
-            // subscribe to events 
-            mc.on('swiperight', (e) => {
-                this.$router.push({ name: 'projectlist', params: { name: this.nextProject.toLowerCase() } })
+            // subscribe to events
+            mc.on("swiperight", (e) => {
+                this.$router.push({ name: "projectlist", params: { name: this.nextProject.toLowerCase() } });
             });
 
-            mc.on('swipeleft', (e) => {
-                this.$router.push({ name: 'projectlist', params: { name: this.prevProject.toLowerCase() } })
+            mc.on("swipeleft", (e) => {
+                this.$router.push({ name: "projectlist", params: { name: this.prevProject.toLowerCase() } });
             });
-        }
-    }
-}
+        },
+    },
+};
 </script>

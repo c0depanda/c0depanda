@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+ 
 const Main = () => import(/* webpackChunkname: "main" */'@/components/main')
 const ProjectList = () => import(/* webpackChunkname: "projectlist" */'@/components/projectList')
 const ProjectItem = () => import(/* webpackChunkname: "projectitem" */'@/components/projectItem')

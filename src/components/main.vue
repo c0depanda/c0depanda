@@ -45,9 +45,9 @@
                 <!-- Section Text -->
                 <div class="section__text">
                     <!-- Section Introduction -->
-                    <p class="section__text__item">Hello, my name is Nosakhare Obaseki, but you can call me
-                        <span class="grey__text">c0depanda</span>. I'm a
-                        <span class="grey__text">Front End Developer</span> currently building great apps at
+                    <p class="section__text__item">Hello, my name is Nosa Obaseki, but you can call me
+                        <span class="grey__text">c0depanda</span>. I'm the
+                        <span class="grey__text">Lead Senior Front-end Engineer</span> currently building great apps at
                         <a href="https://www.flutterwave.com/" target="_blank" class="grey__text underlined">Flutterwave</a>. Feel free to check out recent projects on my
                         <router-link to="/projects" class="grey__text underlined">work</router-link> page.</p>
 

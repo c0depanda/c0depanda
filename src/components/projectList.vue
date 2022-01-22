@@ -46,7 +46,7 @@
                     <!-- Section Text -->
                     <div class="section__text">
                         <!-- Section Introduction -->
-                        <p class="section__text__item">Here is a selection of some of my projects;
+                        <p class="section__text__item">Here is a few selection of some projects built in the past;
                             <br>
                             <router-link to="/projects/haute" class="grey__text underlined">HAUTE</router-link>,
                             <router-link to="/projects/forloop" class="grey__text underlined">forLOOP</router-link>,
@@ -54,14 +54,14 @@
                             <router-link to="/projects/hngtech" class="grey__text underlined">HNG.TECH</router-link>,
                             <router-link to="/projects/airtel" class="grey__text underlined">AIRTEL A-CLUB</router-link>,
                             <router-link to="/projects/recode" class="grey__text underlined">RECODE HACKATHON</router-link>
-                            <br> All built with a combination of HTML5, CSS3 & JAVASCRIPT</p>
+                            <br> All built with a combination of <br />HTML, CSS, SCSS, JAVASCRIPT & VUE</p>
 
                         <!-- Section splitter -->
                         <div class="section__text__split"></div>
 
                         <!-- Section Outline -->
                         <p class="section__text__outline">If you'd like to collaborate on a project or just say hello:
-                            <a href="mailto:hello@nosaobaseki.com" class="grey__text">hello@nosaobaseki.com</a>
+                            <a href="mailto:fredobaseki@gmail.com" class="grey__text">fredobaseki@gmail.com</a>
                         </p>
                     </div>
                     <!-- Social Media Link -->

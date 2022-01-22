@@ -5,6 +5,12 @@
     margin-bottom: 36px;
     max-width: 650px;
     position: relative;
+    @include media(768px) {
+        max-width: 650px;
+    }
+    @include media(992px) {
+        width: 650px;
+    }
     &__header {
         height: 28px;
         border-bottom: 1px solid #9a9a9a;
