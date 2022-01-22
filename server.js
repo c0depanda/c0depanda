@@ -1,12 +1,10 @@
 var express = require('express')
-var secure = require('express-force-https');
 var path = require('path')
 var serveStatic = require('serve-static')
 var helmet = require('helmet')
 
 var app = express()
 // Middleware
-app.use(secure)
 app.use(helmet())
 app.use(helmet.frameguard({ action: 'sameorigin' }))
 app.use("/", serveStatic(path.join(__dirname, '/dist')))
