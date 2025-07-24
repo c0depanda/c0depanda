@@ -55,7 +55,7 @@
                     <div class="section__text__split"></div>
 
                     <!-- Section Outline -->
-                    <p class="section__text__outline">If you'd like to collaborate on a project or just want to say hi, you can reach me at:</p>
+                    <p class="section__text__outline">If you'd like to collaborate on a project or just want to say hi, you can reach me at:
                         <a href="mailto:fredobaseki@gmail.com" class="grey__text">fredobaseki@gmail.com</a>
                     </p>
                 </div>
