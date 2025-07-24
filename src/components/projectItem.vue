@@ -10,7 +10,7 @@
             <div id="projects" class="project">
                 <!-- Project Page -->
                 <div class="project-section">
-                    <div class="container" v-if="item.id == projectPosition" v-for="item in projectList" :key="item.name">
+                    <div class="container" v-for="item in currentProject" :key="item.name">
                         <!-- Browser View -->
                         <div class="browser">
                             <!-- browser header -->
@@ -45,67 +45,12 @@
 </template>
 
 <script>
+import { projectList } from '../data/projects.js'
+
 export default {
     data() {
         return {
-            projectList: [
-                {
-                    id: 0,
-                    name: "HAUTE",
-                    title: "Haute",
-                    description: "Landing Page for a fashion designer’s personal productivity tool aimed at handling tasks and managing their customer base.",
-                    link: "https://c0depanda.bitbucket.io/Haute2/",
-                    image: "/static/img/haute.jpg",
-                },
-                {
-                    id: 1,
-                    name: "FORLOOP",
-                    title: "forLoop",
-                    description: "A community of passionate software developers and enthusiasts across Africa.",
-                    link: "https://c0depanda.bitbucket.io/forLoop/",
-                    image: "/static/img/forloop-Landing-Page.jpg",
-                },
-                {
-                    id: 2,
-                    name: "BUFFRSPACE",
-                    title: "Bufferspace",
-                    description: "Find a great space to work Book from a diverse range of work and meeting spaces, just when you need them - Anywhere, Everywhere.",
-                    link: "http://buffrspace.com/",
-                    image: "/static/img/buffrspace.jpg",
-                },
-                {
-                    id: 3,
-                    name: "HNGTECH",
-                    title: "HNGTECH",
-                    description: "A Landing Page for an organisation that builds technologies for hospitality.",
-                    link: "http://hng.tech/",
-                    image: "/static/img/hngtech.jpg",
-                },
-                {
-                    id: 4,
-                    name: "RECODE",
-                    title: "Recode",
-                    description: "ReCode Nigeria Hackathon website.",
-                    link: "https://c0depanda.bitbucket.io/recode/",
-                    image: "/static/img/reCode-Landing.jpg",
-                },
-                {
-                    id: 5,
-                    name: "HOTELSNG",
-                    title: "HotelsNG",
-                    description: "Hotels.ng is a Nigerian online hotels booking agency which list over 7,000 hotels from 21 regions in Nigeria.",
-                    link: "https://hotels.ng/",
-                    image: "/static/img/hng.jpg",
-                },
-                {
-                    id: 6,
-                    name: "AIRTEL",
-                    title: "Airtel A Club",
-                    description: "A Website that allows you to earn voucher points every time you do a airtime topup.",
-                    link: "https://c0depanda.bitbucket.io/Airtel/",
-                    image: "/static/img/Airtel.jpg",
-                },
-            ],
+            projectList: projectList,
         };
     },
 
@@ -135,6 +80,11 @@ export default {
             } else {
                 return this.projectList[this.projectPosition + 1].name;
             }
+        },
+
+        // current project filtered array
+        currentProject() {
+            return this.projectList.filter(item => item.id === this.projectPosition);
         },
     },
 
