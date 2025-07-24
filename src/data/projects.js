@@ -29,7 +29,7 @@ export const projectList = [
         title: "HNG.TECH",
         description: "A Landing Page for an organisation that builds technologies for hospitality.",
         link: "http://hng.tech/",
-        image: "/static/img/hngtech.jpg",
+        image: "/static/img/techhng.jpg",
     },
     {
         id: 4,
