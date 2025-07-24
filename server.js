@@ -14,12 +14,17 @@ app.use(
         directives: {
             "script-src": ["'self'", "'unsafe-eval'", "nosaobaseki.com", "c0depanda.com"],
             "frame-ancestors": ["'self'", "nosaobaseki.com", "c0depanda.com"],
-            "img-src": ["'self'", "nosaobaseki.com", "c0depanda.com"],
-            "style-src": ["'self'", "nosaobaseki.com", "c0depanda.com", "fonts.googleapis.com"],
+            "img-src": ["'self'", "data:", "nosaobaseki.com", "c0depanda.com"],
+            "style-src": ["'self'", "'unsafe-inline'", "nosaobaseki.com", "c0depanda.com", "fonts.googleapis.com"],
             "font-src": ["'self'", "nosaobaseki.com", "c0depanda.com", "fonts.googleapis.com", "fonts.gstatic.com", 'data:' ],
         },
     })
 );
+
+// Serve static files from multiple locations
+app.use('/static', express.static(path.join(__dirname, 'static')))
+app.use('/static', express.static(path.join(__dirname, 'dist/static')))
+
 app.use("/", serveStatic(path.join(__dirname, '/dist'), {
     maxAge: '1d',
     setHeaders: (res, path) => {
