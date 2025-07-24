@@ -1,5 +1,6 @@
 var express = require('express')
 var path = require('path')
+var fs = require('fs')
 var serveStatic = require('serve-static')
 var helmet = require('helmet')
 var compression = require('compression')
@@ -39,7 +40,18 @@ app.use("/", serveStatic(path.join(__dirname, '/dist'), {
     }
 }))
 
-// Catch all routes and redirect to index
+// CV download route
+app.get('/cv', (req, res) => {
+    const cvPath = path.join(__dirname, 'static', 'NosaObasekiCV.pdf')
+    res.download(cvPath, 'NosaObasekiCV.pdf', (err) => {
+        if (err) {
+            console.error('Error downloading CV:', err)
+            res.status(404).send('CV not found')
+        }
+    })
+})
+
+// Catch all routes and redirect to index (must be last)
 app.get('*', function (req, res) {
     res.sendFile(path.join(__dirname, '/dist/index.html'))
 })
@@ -48,4 +60,3 @@ var port = process.env.PORT || 3000
 app.listen(port, () => {
     console.log('Server started on port ' + port)
 })
-console.log('server started ' + port)

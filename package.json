@@ -1,12 +1,16 @@
 {
-  "name": "vv1",
+  "name": "nosa-obaseki-portfolio",
   "version": "1.0.0",
-  "description": "A Vue.js project",
-  "author": "Nosakhare <fredobaseki@gmail.com>",
+  "description": "Portfolio website for Nosa Obaseki - Senior Engineering Manager with 10+ years of experience leading high-performing teams and delivering scalable web applications for global markets.",
+  "author": "Nosa Obaseki <fredobaseki@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
+    "start": "pm2 start ecosystem.config.js --env production",
+    "start:dev": "pm2 start ecosystem.config.js --env development",
+    "stop": "pm2 stop nosa-obaseki-portfolio",
+    "restart": "pm2 restart nosa-obaseki-portfolio",
+    "logs": "pm2 logs nosa-obaseki-portfolio",
     "build": "node build/build.js"
   },
   "dependencies": {
