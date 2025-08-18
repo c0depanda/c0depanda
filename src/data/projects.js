@@ -1,6 +1,14 @@
 export const projectList = [
     {
         id: 0,
+        name: "PICALIS",
+        title: "Picalis",
+        description: "A SaaS platform that transforms job applications into interview invitations. AI-powered technology creates tailored resumes and cover letters that capture employer attention and dramatically increase callback rates.",
+        link: "https://picalis.com/",
+        image: "/static/img/picalis.png",
+    },
+    {
+        id: 1,
         name: "HAUTE",
         title: "Haute",
         description: "Landing Page for a fashion designer's personal productivity tool aimed at handling tasks and managing their customer base.",
@@ -8,7 +16,7 @@ export const projectList = [
         image: "/static/img/haute.jpg",
     },
     {
-        id: 1,
+        id: 2,
         name: "FORLOOP",
         title: "forLoop",
         description: "A community of passionate software developers and enthusiasts across Africa.",
@@ -16,7 +24,7 @@ export const projectList = [
         image: "/static/img/forloop-Landing-Page.jpg",
     },
     {
-        id: 2,
+        id: 3,
         name: "BUFFRSPACE",
         title: "Bufferspace",
         description: "Find a great space to work Book from a diverse range of work and meeting spaces, just when you need them - Anywhere, Everywhere.",
@@ -24,7 +32,7 @@ export const projectList = [
         image: "/static/img/buffrspace.jpg",
     },
     {
-        id: 3,
+        id: 4,
         name: "HNGTECH",
         title: "HNG.TECH",
         description: "A Landing Page for an organisation that builds technologies for hospitality.",
@@ -32,7 +40,7 @@ export const projectList = [
         image: "/static/img/techhng.jpg",
     },
     {
-        id: 4,
+        id: 5,
         name: "RECODE",
         title: "Recode Hackathon",
         description: "ReCode Nigeria Hackathon website.",
@@ -40,7 +48,7 @@ export const projectList = [
         image: "/static/img/reCode-Landing.jpg",
     },
     {
-        id: 5,
+        id: 6,
         name: "AIRTEL",
         title: "Airtel A-Club",
         description: "A Website that allows you to earn voucher points every time you do a airtime topup.",
@@ -48,7 +56,7 @@ export const projectList = [
         image: "/static/img/Airtel.jpg",
     },
     {
-        id: 6,
+        id: 7,
         name: "TBILLS",
         title: "Treasury Bills",
         description: "Treasury bills made simple. A platform that allows you to invest in treasury bills and earn interest on your investment.",
@@ -56,7 +64,7 @@ export const projectList = [
         image: "/static/img/tbills.png",
     },
     {
-        id: 7,
+        id: 8,
         name: "HOTELSNG",
         title: "HotelsNG",
         description: "Hotels.ng is a Nigerian online hotels booking agency which list over 7,000 hotels from 21 regions in Nigeria.",
@@ -64,7 +72,7 @@ export const projectList = [
         image: "/static/img/hng.jpg",
     },
     {
-        id: 8,
+        id: 9,
         name: "SUREGIFT",
         title: "Suregift",
         description: "A Corporate Gifting Platform that allows you to easily reward, motivate and show appreciation to your Employees, Customers and Business Partners.",
@@ -72,7 +80,7 @@ export const projectList = [
         image: "/static/img/suregiftbus.jpg",
     },
     {
-        id: 9,
+        id: 10,
         name: "TRUPPR",
         title: "Truppr",
         description: "A platform that allows you connect with people and discover fitness events around you.",

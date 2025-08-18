@@ -51,7 +51,7 @@
                             <span v-for="(project, index) in featuredProjects" :key="project.id">
                                 <router-link :to="`/projects/${project.name.toLowerCase()}`" class="grey__text underlined">{{ project.name }}</router-link><span v-if="index < featuredProjects.length - 1">, </span>
                             </span>
-                            <br> All built with a combination of <br />HTML, CSS, SCSS, JAVASCRIPT & VUE</p>
+                            <br> All built with a combination of <br />HTML, CSS, SCSS, JAVASCRIPT & GO</p>
 
                         <!-- Section splitter -->
                         <div class="section__text__split"></div>
